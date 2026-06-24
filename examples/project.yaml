@@ -1,0 +1,10 @@
+name: my-app
+parts:
+  assets:
+    plugin: dump
+    source: static/
+  app:
+    plugin: python
+    source: .
+    after:
+      - assets
